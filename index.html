@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" placeholder="0" id="output-screen" readonly>
+
+            <div class="button-row">
+                <button  class="operator" onclick="show('(')">(</button>
+                <button class="operator" onclick="show(')')">)</button>
+                <button class="operator" onclick="show('ans')">ans</button>
+                <button class="operator" onclick="del()">Del</button>
+                <button class="operator" onclick="clr()">Clear</button>
+            </div>
+
+            <div class="button-row">
+                <button class="light" onclick="show('7')">7</button>
+                <button class="light" onclick="show('8')">8</button>
+                <button class="light" onclick="show('9')">9</button>
+                <button class="operator" onclick="show('%')">%</button>
+                <button class="operator "onclick="show('sqrt')">√</button>
+            </div>
+
+            <div class="button-row">
+                <button class="light" onclick="show('4')">4</button>
+                <button class="light" onclick="show('5')">5</button>
+                <button class="light" onclick="show('6')">6</button>
+                <button class="operator" onclick="show('*')">x</button>
+                <button class="operator" onclick="show('/')">÷</button>
+            </div>
+
+            <div class="button-row">
+                <button class="light" onclick="show('1')">1</button>
+                <button class="light" onclick="show('2')">2</button>
+                <button class="light" onclick="show('3')">3</button>
+                <button class="operator" onclick="show('+')">+</button>
+                <button class="operator" onclick="show('-')">-</button>
+            </div>
+
+            <div class="button-row">
+                <button class="operator"onclick="show('.')">.</button>
+                <button class="light" onclick="show('0')">0</button>
+                <button class="operator" onclick="show('±')">±</button>
+                <button class="enter" onclick="cal('=')" id="enter">Enter</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
